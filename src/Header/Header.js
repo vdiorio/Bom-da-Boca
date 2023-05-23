@@ -4,6 +4,7 @@ import { SiAboutDotMe } from 'react-icons/si';
 import { MdRestaurantMenu } from 'react-icons/md';
 import { MdRateReview } from 'react-icons/md';
 import { GrContact } from 'react-icons/gr';
+import Logo from '../Images/file.jpg'
 
 
 import "./header.scss";
@@ -13,23 +14,28 @@ const Header = () => {
     <header className="header">
       <nav className="navbar">
         <a href="#home">
-          <div className="logo">SNACK</div>
+          <div className="mobileLogo">
+            <img width="50px" src={Logo} alt="Logo" />
+          </div>
+          <div className="logo">
+            <img width="50px" src={Logo} alt="Logo" />
+          </div>
         </a>
         <div className="menuItems">
           <a href="#home">
-            <div className="menuItem">Home</div>
+            <div className="menuItem">Início</div>
           </a>
           <a href="#about">
-            <div className="menuItem">About</div>
+            <div className="menuItem">Sobre</div>
           </a>
           <a href="#menu">
             <div className="menuItem">Menu</div>
           </a>
           <a href="#testimonials">
-            <div className="menuItem">Testimonials</div>
+            <div className="menuItem">Depoimentos</div>
           </a>
           <a href="#contact">
-            <div className="menuItem">Contact us</div>
+            <div className="menuItem">Contato</div>
           </a>
         </div>
       </nav>

@@ -18,15 +18,27 @@
     align-items: center;
     padding: 1.6rem;
 
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .logo {
       font-size: 3.5rem;
       font-weight: bold;
       transition: 0.5s;
       color: var(--primary-color);
-
+      margin: auto;
+      @include respond(phone) {
+        display: none;
+      }
+      @include respond(port) {
+        display: none;
+      }
       &:hover {
         transform: scale(1.2);
       }
+      
     }
 
     .menuItems {
@@ -60,11 +72,19 @@
   }
 }
 
+.mobileLogo {
+  display: none;
+  @include respond(phone) {
+    display: inline-block;
+  }
+}
+
 .mobileNavbar {
   display: none;
+  color: black !important;
 
   @include respond(phone) {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -80,7 +100,7 @@
     }
 
     .mobileItem {
-      color: var(--grey);
+      color: black;
       font-size: 3rem;
       padding: 1rem;
     }

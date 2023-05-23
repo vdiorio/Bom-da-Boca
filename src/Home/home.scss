@@ -27,10 +27,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-shadow: 1px 1px 2px black;
+      color: black !important;
 
       & h1 {
-        font-size: 14rem;
-        letter-spacing: 5rem;
+        font-size: 10rem;
+        letter-spacing: 2rem;
         color: var(--primary-color);
         text-transform: uppercase;
 
@@ -56,7 +58,7 @@
       & button {
         font-size: 4rem;
         color: var(--white);
-        background-color: transparent;
+        background-color: rgba(255,0,0,0.2);
         outline: none;
         border: none;
         border: 0.3rem solid var(--primary-color);

@@ -18,10 +18,10 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="slogan">
-              <h1>SNACK</h1>
-              <p>Try the best food of the week.</p>
+              <h1>Bom da Boca</h1>
+              <p>Experimente o melhor hamburguer da região.</p>
               <div>
-                <a href="https://www.foodpanda.com.bd/"><button>Order Now</button></a>
+                <a href="https://www.foodpanda.com.bd/"><button>Peça agora</button></a>
               </div>
             </div>
           </div>
